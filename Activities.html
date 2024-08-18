@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="C:\Users\fayez\Downloads\436187713_418583011108391_5582191848356278219_n.jpg" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayez's Projects</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Auge&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header .navigation {
+            display: flex;
+            gap: 0px;
+        }
+
+        @keyframes color-change {
+            0% { background-color: rgb(133, 138, 194); }
+            25% { background-color: rgb(255, 59, 37); }
+            50% { background-color: rgb(128, 216, 218); }
+            75% { background-color: rgb(21, 168, 79); }
+            100% { background-color: rgb(238, 163, 2); }
+        }
+
+        header .navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header .navigation a:hover {
+            color: white;
+        }
+
+        header .navigation a[href="Mains.html"]:hover {
+            animation: color-change 3s infinite;
+            color: white;
+        }
+
+        header .navigation a[href="Skills.html"]:hover {
+            background-color: rgb(133, 138, 194);
+        }
+
+        header .navigation a[href="projects.html"]:hover {
+            background-color: rgb(255, 59, 37);
+        }
+
+        header .navigation a[href="Activities.html"]:hover {
+            background-color: rgb(128, 216, 218);
+        }
+
+        header .navigation a[href="Volunteer.html"]:hover {
+            background-color: rgb(21, 168, 79);
+        }
+
+        header .navigation a[href="Resume-Ismail Fayez.pdf"]:hover {
+            background-color: rgb(238, 163, 2);
+        }
+
+        header .navigation a[href="MyGames.html"]:hover {
+animation: color-change 3s infinite; 
+color: white; 
+}
+
+        .navigation i {
+            margin-right: 5px;
+            color: #000000;
+        }
+
+        .golden-star {
+            color: goldenrod;
+            display: inline-block;
+            animation: rotate 5s linear infinite;
+        }
+
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+
+            .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0; 
+        gap: 5px; 
+        }
+
+
+        .box {
+        width: 500px; 
+        background-color: #ffffff;
+        box-shadow: 0 0 0.5px rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 15px; 
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 20px; 
+        }
+
+        .box img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        max-height: 550px; 
+        object-fit: cover; 
+            }
+
+        .box .caption {
+            margin-top: 10px;
+            font-size: 18px; 
+            font-weight: bold;
+        }
+
+        .box .date {
+            margin-top: 5px;
+            font-size: 16px; 
+            color: #686b6b;
+        }
+
+        footer {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 300px;
+            width: 100%;
+            box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            margin-top: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .contact-info, .social-media {
+            margin-bottom: 10px;
+        }
+
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+        }
+        .connection {
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        }
+
+        .connection p {
+            margin: 0; 
+        }
+
+        .connection div {
+            display: flex;
+            gap: 10px; 
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="title"><span class="golden-star">&#10022;</span> Fayez Ismail</div>
+            <nav class="navigation">
+                <a href="Mains.html"><i class="fas fa-home"></i> Home</a>
+                <a href="Resume-Ismail Fayez.pdf" target="_blank">Resume</a>
+                <a href="projects.html">Projects</a>
+                <a href="Volunteer.html">Volunteering</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Activities.html">Activities</a>
+               
+            </nav>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <img src="../pictures/Bridge.jpg" alt="Project 9">
+            <div class="caption">First In-person meeting with ECE department as a Communicate Coordinator</div>
+            <div class="date">September 10, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/Bridge.jpg" alt="Project 9">
+            <div class="caption">First Day in Second year Computer Engineering</div>
+            <div class="date">September 02, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/Team PIC - Final Day.jpg" alt="Project 1">
+            <div class="caption">Final Presentation with CSA - Canadian Space Agency</div>
+            <div class="date">April 22, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/Bridge.jpg" alt="Project 9">
+            <div class="caption">Mechanics Class</div>
+            <div class="date">March 03, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/construction.jpg" alt="Project 2">
+            <div class="caption">Visiting Construction <S></S>ite</div>
+            <div class="date">February 17, 2024</div>
+        </div>
+        
+        <div class="box">
+            <img src="../pictures/VWF.jpg" alt="Project 3">
+            <div class="caption">Volunteer at First Gloabl Challenge with Friends</div>
+            <div class="date">October 09, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/Finals FGC.jpg" alt="Project 11">
+            <div class="caption">Final day in Singapore</div>
+            <div class="date">October 09, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/firstdayqueens.jpg" alt="Project 4">
+            <div class="caption">First Day at Queen's University</div>
+            <div class="date">September 09, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/VOY.jpg" alt="Project 5">
+            <div class="caption">Volunteering Certificate</div>
+            <div class="date">June 09, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/Theend.jpg" alt="Project 6">
+            <div class="caption">The End !</div>
+            <div class="date">May 01, 2024</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/GDay.jpg" alt="Project 7">
+            <div class="caption">Graduation Day</div>
+            <div class="date">July 01, 2023</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/certificate.jpg" alt="Project 8">
+            <div class="caption">Awards</div>
+            <div class="date">October 25, 2023</div>
+        </div>
+        
+        <div class="box">
+            <img src="../pictures/FirstDayGeneva.jpg" alt="Project 9">
+            <div class="caption">First Match. FIRST Global Challenge</div>
+            <div class="date">October 23, 2023</div>
+        </div>
+
+        <div class="box">
+            <img src="../pictures/matchprep.jpg" alt="Project 10">
+            <div class="caption">Match Preparations in Geneva, Switzerland</div>
+            <div class="date">October 20, 2023</div>
+        </div>
+
+            <footer>
+                <p>Phone (<img src="../pictures/Canadian Flag.png" alt="Canadian Flag" width="20">): +1 343 363 9930</p>
+                <p>Email: Fayezismail2025@gmail.com</p>
+                    <div class="connection">
+                        <p>Let's Connect:</p>
+                        <div>
+                            <a href="https://www.instagram.com/fayezi23/" target="_blank"><img src="../pictures/InstaPhoto.jpeg" alt="Instagram" width="30"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100008833868408" target="_blank"><img src="../pictures/FacebPhoto.png" alt="Facebook" width="30"></a>
+                            <a href="https://www.linkedin.com/in/fayez-ismail/" target="_blank"><img src="../pictures/LinkedPhoto.png" alt="LinkedIn" width="30"></a>
+                        </div>
+                    </div>
+                </footer>
+            </body>
+        </html>
+    </body>
+</html>
