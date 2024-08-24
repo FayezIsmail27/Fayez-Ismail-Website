@@ -208,36 +208,39 @@
                 color: black;
             }
         
-             footer {
+footer {
         padding: 10px 20px;
         background-color: #ffffff;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 98%;
+        width: 100%; /* Make the footer as wide as the header */
         box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
         margin-top: auto;
         flex-wrap: nowrap; /* Ensure items are side by side */
     }
 
-    footer p, footer .connection {
-        margin: 0;
-        flex-grow: 1;
+    footer .footer-item {
+        flex: 1;
         text-align: center;
-        padding: 10px 0;
     }
 
-    footer .connection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    footer .footer-item.phone {
+        text-align: left; /* Align the phone number to the left */
     }
 
-    footer .connection div {
-        display: flex;
-        gap: 15px;
+    footer .footer-item.email {
+        text-align: center; /* Center the email address */
+    }
+
+    footer .footer-item.socials {
+        text-align: right; /* Align the socials to the right */
+    }
+
+    footer .social-icons {
+        display: inline-flex;
+        gap: 10px;
     }
 
     .row {
@@ -329,18 +332,22 @@
 
 
                         <footer>
-                            <p>Phone (<img src="Pictures/Canadian Flag.png" alt="Canadian Flag" width="20">): +1 343 363 9930</p>
-                            <p>Email: Fayezismail2025@gmail.com</p>
-                            <div class="connection">
-                                <p>Let's Connect:</p>
-                                <div>
-                                    <a href="https://www.instagram.com/fayezi23/" target="_blank"><img src="Pictures/InstaPhoto.jpeg" alt="Instagram" width="30"></a>
-                                    <a href="https://www.facebook.com/profile.php?id=100008833868408" target="_blank"><img src="Pictures/FacebPhoto.png" alt="Facebook" width="30"></a>
-                                    <a href="https://www.linkedin.com/in/fayez-ismail/" target="_blank"><img src="Pictures/LinkedPhoto.png" alt="LinkedIn" width="30"></a>
-                                    <a href="https://github.com/FayezIsmail27" target="_blank"><img src="Pictures/Githhunicon01.png" alt="Github" width="25"></a>
+                            <div class="footer-item phone">
+                                <p>Phone: <span>+1 343 363 9930</span></p>
+                            </div>
+                            <div class="footer-item email">
+                                <p>Email: <span>Fayezismail2025@gmail.com</span></p>
+                            </div>
+                            <div class="footer-item socials">
+                                <div class="social-icons">
+                                     <a href="https://www.instagram.com/fayezi23/" target="_blank"><img src="Pictures/InstaPhoto.jpeg" alt="Instagram" width="30"></a> 
+                                     <a href="https://www.facebook.com/profile.php?id=100008833868408" target="_blank"><img src="Pictures/FacebPhoto.png" alt="Facebook" width="30"></a>
+                                     <a href="https://www.linkedin.com/in/fayez-ismail/" target="_blank"><img src="Pictures/LinkedPhoto.png" alt="LinkedIn" width="30"></a>
+                                     <a href="https://github.com/FayezIsmail27" target="_blank"><img src="Pictures/Githhunicon01.png" alt="Github" width="25"></a>
                                 </div>
                             </div>
                         </footer>
+
                     </body>
                 </html>
             </body>
