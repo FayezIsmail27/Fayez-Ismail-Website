@@ -7,9 +7,8 @@
         <title>Fayez Ismail&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Main Page</title>
 
         <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Avenir+Light:wght@300&family=Work+Sans:wght@100;300;400;500;700&display=swap');
-
+            @import url('https://fonts.googleapis.com/css2?family=Avenir+Light:wght@300&family=Work+Sans:wght@100;300;400;500;700&display=swap');
+        
             body {
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -19,7 +18,7 @@
                 min-height: 100vh;
                 background-color: #ffffff;
             }
-
+        
             header {
                 background-color: #ffffff;
                 padding: 10px 20px;
@@ -29,85 +28,87 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 position: fixed;
                 width: 98%;
-   
             }
-
+        
             header .title {
                 font-size: 20px;
                 font-weight: bold;
             }
-
+        
             header .navigation {
                 display: flex;
                 gap: 0px;
             }
-            
+        
             @keyframes color-change {
-        0% {
-            background-color: rgb(133, 138, 194);; 
-        }
-        25% {
-            background-color: rgb(255, 59, 37);
-        }
-        50% {
-            background-color: rgb(128, 216, 218); 
-        }
-        75% {
-            background-color: rgb(21, 168, 79); 
-        }
-        100% {
-            background-color: rgb(238, 163, 2); 
-        }
-        }
-
-        header .navigation a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            background-color: #ffffff; 
-            border: 1px solid #ffffff; 
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        header .navigation a:hover {
-            color: white; 
-        }
-
-        header .navigation a[href="index.html"]:hover {
-            animation: color-change 3s infinite; 
-            color: white; 
-        }
-
-        header .navigation a[href="Skills.html"]:hover {
-            background-color: rgb(133, 138, 194); 
-        }
-
-        header .navigation a[href="projects.html"]:hover {
-            background-color: rgb(255, 59, 37); 
-        }
-
-        header .navigation a[href="Activities.html"]:hover {
-            background-color: rgb(128, 216, 218); 
-        }
-
-        header .navigation a[href="Volunteer.html"]:hover {
-            background-color: rgb(21, 168, 79); 
-        }
-
-        header .navigation a[href="Fayez_Ismail_Resume.pdf"]:hover {
-            background-color: rgb(238, 163, 2); 
-        }
-            .navigation i {
-                margin-right: 5px; 
-                color: #000000; 
+                0% {
+                    background-color: rgb(133, 138, 194);
+                }
+                25% {
+                    background-color: rgb(255, 59, 37);
+                }
+                50% {
+                    background-color: rgb(128, 216, 218);
+                }
+                75% {
+                    background-color: rgb(21, 168, 79);
+                }
+                100% {
+                    background-color: rgb(238, 163, 2);
+                }
             }
+        
+            header .navigation a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                padding: 10px 15px;
+                border-radius: 5px;
+                background-color: #ffffff;
+                border: 1px solid #ffffff;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+        
+            header .navigation a:hover {
+                color: white;
+            }
+        
+            header .navigation a[href="index.html"]:hover {
+                animation: color-change 3s infinite;
+                color: white;
+            }
+        
+            header .navigation a[href="Skills.html"]:hover {
+                background-color: rgb(133, 138, 194);
+            }
+        
+            header .navigation a[href="projects.html"]:hover {
+                background-color: rgb(255, 59, 37);
+            }
+        
+            header .navigation a[href="Activities.html"]:hover {
+                background-color: rgb(128, 216, 218);
+            }
+        
+            header .navigation a[href="Volunteer.html"]:hover {
+                background-color: rgb(21, 168, 79);
+            }
+        
+            header .navigation a[href="Fayez_Ismail_Resume.pdf"]:hover {
+                background-color: rgb(238, 163, 2);
+            }
+        
+            .navigation i {
+                margin-right: 5px;
+                color: #000000;
+            }
+        
             .golden-star {
                 color: goldenrod;
                 display: inline-block;
                 animation: rotate 5s linear infinite;
             }
+        
             @keyframes rotate {
                 from {
                     transform: rotate(0deg);
@@ -116,6 +117,7 @@
                     transform: rotate(360deg);
                 }
             }
+        
             .container {
                 padding: 0px 20px 40px;
                 max-width: 1250px;
@@ -126,17 +128,17 @@
                 align-items: center;
                 justify-content: flex-start;
                 margin: 20px auto;
-                box-sizing: border-box; 
+                box-sizing: border-box;
             }
-
+        
             .profile-pic {
                 border-radius: 50%;
                 width: 550px;
                 height: 550px;
                 object-fit: cover;
-                margin-right: 40px; 
+                margin-right: 40px;
             }
-
+        
             .circle {
                 width: 150px;
                 height: 150px;
@@ -155,104 +157,140 @@
                 text-align: center;
                 transition: transform 0.5s ease;
             }
-
+        
             .circle:hover {
                 background-color: #ffffff;
                 color: black;
                 cursor: pointer;
                 transform: scale(1.15);
             }
-
-            .Skills { background-color: rgb(133, 138, 194); }
-            .projects { background-color: rgb(255, 59, 37); }
-            .Activities { background-color: rgb(128, 216, 218); }
-            .volunteer { background-color: rgb(21, 168, 79); }
-            .resume { background-color: rgb(238, 163, 2); }
-
+        
+            .Skills {
+                background-color: rgb(133, 138, 194);
+            }
+        
+            .projects {
+                background-color: rgb(255, 59, 37);
+            }
+        
+            .Activities {
+                background-color: rgb(128, 216, 218);
+            }
+        
+            .volunteer {
+                background-color: rgb(21, 168, 79);
+            }
+        
+            .resume {
+                background-color: rgb(238, 163, 2);
+            }
+        
             h1 {
                 font-family: 'Work Sans', sans-serif;
                 font-size: 5.5em;
             }
-
+        
             .about-me {
                 font-family: 'Work Sans', sans-serif;
                 font-size: 1.5em;
                 font-weight: 400;
             }
-
+        
             p {
                 font-family: 'Avenir Light', sans-serif;
                 font-size: 1.2em;
                 font-weight: normal;
             }
-
+        
             .buttons a:hover {
                 opacity: 0.8;
                 background-color: #ffffff;
                 color: black;
             }
-
-                footer {
-                    padding: 10px 20px;
-                    background-color: #ffffff;
-                    text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 20px; 
-                    width: 100%;
-                    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-                    box-sizing: border-box;
-                    margin-top: auto;
-                }
-
+        
+            footer {
+                padding: 10px 20px;
+                background-color: #ffffff;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+                box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+                box-sizing: border-box;
+                margin-top: auto;
+                flex-wrap: wrap;
+            }
+        
+            footer p {
+                margin: 0;
+                flex-grow: 1;
+                text-align: center;
+                padding: 10px 0;
+            }
+        
+            footer .connection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                flex-grow: 1;
+            }
+        
+            footer .connection div {
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+            }
+        
             .row {
                 display: flex;
                 justify-content: center;
-                margin-bottom: -50px; 
+                margin-bottom: -50px;
                 text-decoration: none;
             }
-
+        
             .content {
                 text-align: left;
                 width: 100%;
             }
-
+        
             .profile-section {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
             }
-
+        
             .profile-section .profile-pic {
                 align-self: flex-start;
             }
-
+        
             a {
                 text-decoration: none;
                 color: inherit;
                 display: inline-block;
             }
+        
             .connection {
                 display: flex;
-                flex-direction: column; /* Stack items vertically */
+                flex-direction: column;
                 align-items: center;
-                gap: 10px; /* Reduced gap for smaller screens */
+                gap: 10px;
             }
-
+        
             .connection p {
-                margin: 0; 
+                margin: 0;
             }
-
+        
             .connection div {
                 display: flex;
-                gap: 15px; 
+                gap: 15px;
+                justify-content: center;
             }
+        </style>
 
-            
-    </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -295,9 +333,9 @@
                 </div>
 
 
-                    <footer>
-                        <p>Phone (<img src="Pictures/Canadian Flag.png" alt="Canadian Flag" width="20">): +1 343 363 9930</p>
-                        <p>Email: Fayezismail2025@gmail.com</p>
+                        <footer>
+                            <p>Phone (<img src="Pictures/Canadian Flag.png" alt="Canadian Flag" width="20">): +1 343 363 9930</p>
+                            <p>Email: Fayezismail2025@gmail.com</p>
                             <div class="connection">
                                 <p>Let's Connect:</p>
                                 <div>
