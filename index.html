@@ -192,19 +192,20 @@
                 color: black;
             }
 
-            footer {
-                padding: 10px 20px;
-                background-color: #ffffff;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 300px;
-                width: 100%;
-                box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-                box-sizing: border-box;
-                margin-top: auto;
-            }
+                footer {
+                    padding: 10px 20px;
+                    background-color: #ffffff;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px; 
+                    width: 100%;
+                    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+                    box-sizing: border-box;
+                    margin-top: auto;
+                }
 
             .row {
                 display: flex;
@@ -235,9 +236,10 @@
                 display: inline-block;
             }
             .connection {
-            display: flex;
-            align-items: center;
-            gap: 10px; 
+                display: flex;
+                flex-direction: column; /* Stack items vertically */
+                align-items: center;
+                gap: 10px; /* Reduced gap for smaller screens */
             }
 
             .connection p {
@@ -246,8 +248,20 @@
 
             .connection div {
                 display: flex;
-                gap: 10px; 
+                gap: 15px; 
             }
+
+            @media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        gap: 300px; 
+    }
+
+    .connection {
+        flex-direction: row;
+        gap: 10px; 
+    }
+}
             
     </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
