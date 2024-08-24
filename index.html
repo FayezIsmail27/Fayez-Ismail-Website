@@ -208,87 +208,82 @@
                 color: black;
             }
         
-            footer {
-                padding: 10px 20px;
-                background-color: #ffffff;
-                text-align: center;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 20px;
-                width: 100%;
-                box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-                box-sizing: border-box;
-                margin-top: auto;
-                flex-wrap: wrap;
-            }
-        
-            footer p {
-                margin: 0;
-                flex-grow: 1;
-                text-align: center;
-                padding: 10px 0;
-            }
-        
-            footer .connection {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                flex-grow: 1;
-            }
-        
-            footer .connection div {
-                display: flex;
-                gap: 15px;
-                justify-content: center;
-            }
-        
-            .row {
-                display: flex;
-                justify-content: center;
-                margin-bottom: -50px;
-                text-decoration: none;
-            }
-        
-            .content {
-                text-align: left;
-                width: 100%;
-            }
-        
-            .profile-section {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-            }
-        
-            .profile-section .profile-pic {
-                align-self: flex-start;
-            }
-        
-            a {
-                text-decoration: none;
-                color: inherit;
-                display: inline-block;
-            }
-        
-            .connection {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-        
-            .connection p {
-                margin: 0;
-            }
-        
-            .connection div {
-                display: flex;
-                gap: 15px;
-                justify-content: center;
-            }
+             footer {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98%;
+        box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        margin-top: auto;
+        flex-wrap: nowrap; /* Ensure items are side by side */
+    }
+
+    footer p, footer .connection {
+        margin: 0;
+        flex-grow: 1;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer .connection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .connection div {
+        display: flex;
+        gap: 15px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -50px;
+        text-decoration: none;
+    }
+
+    .content {
+        text-align: left;
+        width: 100%;
+    }
+
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .profile-section .profile-pic {
+        align-self: flex-start;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    }
+
+    .connection {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .connection p {
+        margin: 0;
+    }
+
+    .connection div {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
         </style>
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
