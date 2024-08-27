@@ -35,71 +35,66 @@
         }
 
         @keyframes color-change {
-    0% {
-        background-color: rgb(133, 138, 194);; 
-    }
-    25% {
-        background-color: rgb(255, 59, 37);
-    }
-    50% {
-        background-color: rgb(128, 216, 218); 
-    }
-    75% {
-        background-color: rgb(21, 168, 79); 
-    }
-    100% {
-        background-color: rgb(238, 163, 2); 
-    }
-}
+            0% {
+                background-color: rgb(133, 138, 194); 
+            }
+            25% {
+                background-color: rgb(255, 59, 37);
+            }
+            50% {
+                background-color: rgb(128, 216, 218); 
+            }
+            75% {
+                background-color: rgb(21, 168, 79); 
+            }
+            100% {
+                background-color: rgb(238, 163, 2); 
+            }
+        }
 
-header .navigation a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #ffffff; 
-    border: 1px solid #ffffff; 
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+        header .navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #ffffff; 
+            border: 1px solid #ffffff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-header .navigation a:hover {
-    color: white; 
-}
+        header .navigation a:hover {
+            color: white; 
+        }
 
-header .navigation a[href="index.html"]:hover {
+        header .navigation a[href="index.html"]:hover {
             animation: color-change 3s infinite; 
             color: white; 
         }
 
-header .navigation a[href="Skills.html"]:hover {
-    background-color: rgb(133, 138, 194); 
-}
+        header .navigation a[href="Skills.html"]:hover {
+            background-color: rgb(133, 138, 194); 
+        }
 
-header .navigation a[href="projects.html"]:hover {
-    background-color: rgb(255, 59, 37); 
-}
+        header .navigation a[href="projects.html"]:hover {
+            background-color: rgb(255, 59, 37); 
+        }
 
-header .navigation a[href="Activities.html"]:hover {
-    background-color: rgb(128, 216, 218); 
-}
+        header .navigation a[href="Activities.html"]:hover {
+            background-color: rgb(128, 216, 218); 
+        }
 
-header .navigation a[href="Volunteer.html"]:hover {
-    background-color: rgb(21, 168, 79); 
-}
+        header .navigation a[href="Volunteer.html"]:hover {
+            background-color: rgb(21, 168, 79); 
+        }
 
-header .navigation a[href="Fayez_Ismail_Resume.pdf"]:hover {
-    background-color: rgb(238, 163, 2); 
-}
+        header .navigation a[href="Fayez_Ismail_Resume.pdf"]:hover {
+            background-color: rgb(238, 163, 2); 
+        }
 
-header .navigation a[href="MyGames.html"]:hover {
-animation: color-change 3s infinite; 
-color: white; 
-}
-
-        .navigation i {
-            margin-right: 5px;
-            color: #000;
+        header .navigation a[href="MyGames.html"]:hover {
+            animation: color-change 3s infinite; 
+            color: white; 
         }
 
         .golden-star {
@@ -120,79 +115,87 @@ color: white;
         }
 
         .container {
+            position: relative;
             padding: 20px;
-            background-color: #fff;
             border-radius: 10px;
             margin: 20px 0;
             box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff; /* Default color */
+            color: #333;
+            text-align: center;
+            transition: all 0.3s ease;
+            max-height: 150px; /* Default height */
+            transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition */
+        }
+
+        .container h1 {
+            position: relative;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            z-index: 1;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .container ul {
+            opacity: 0; /* Hide content initially */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .container:hover {
+            max-height: 500px; /* Expand to fit content */
+            transform: scale(1.05); /* Slightly scale up */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .container:hover h1 {
+            text-align: left;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            transform: translateX(0);
+            color: white;
+            text-shadow: 2px 2px 0 #000; /* Black border effect */
+        }
+
+        .container:hover ul {
+            opacity: 1; /* Show content */
+            top: 20px; /* Adjust content position */
+            left: 20px; /* Adjust content position */
+            transform: translate(0);
         }
 
         .container1 {
-            box-shadow: 0 0 10px rgb(149, 39, 39);
+            background-color:  rgb(255, 59, 37); /* Red */
+            border: #000;
         }
 
         .container2 {
-            box-shadow: 0 0 10px rgb(159, 124, 42);
+            background-color: rgb(21, 168, 79); /* Green */
+            border: #000;
         }
 
         .container3 {
-            box-shadow: 0 0 10px rgb(46, 135, 117);
+            background-color: rgb(133, 138, 194); /* Blue */
+            border: #000;
         }
 
         .container4 {
-            box-shadow: 0 0 10px rgb(64, 50, 135);
-        }
-
-        .left-images, .right-images {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100px; 
-        }
-
-        .left-images img{
-            width: 165%; 
-            display: block;
-            margin-bottom: 70px; 
-        }
-
-        .right-images img {
-            width: 175%; 
-            display: block;
-            margin-bottom: 70px; 
-        }
-
-        .left-images {
-            left: -240px; 
-        }
-
-        .right-images {
-            right: -180px; 
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        @media (max-width: 768px) {
-            .left-images, .right-images {
-                display: none; 
-            }
-
-            .container {
-                margin: 20px auto;
-            }
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+            background-color: rgb(238, 163, 2); /* Orange */
+            border: #000;
         }
 
         footer {
@@ -217,55 +220,54 @@ color: white;
             width: 30px;
             height: 30px;
         }
+
         .connection {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    }
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
 
-    .connection p {
-        margin: 0; 
-    }
+        .connection p {
+            margin: 0; 
+        }
 
-    .connection div {
-        display: flex;
-        gap: 10px; 
-    }
-        </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+        .connection div {
+            display: flex;
+            gap: 10px; 
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
 
     <header>
         <div class="title"><span class="golden-star">&#10022;</span> Fayez Ismail</div>
-            <nav class="navigation">
-                <a href="index.html"><i class="fas fa-home"></i> Home</a>
-                <a href="Fayez_Ismail_Resume.pdf" target="_blank">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="Volunteer.html">Volunteering</a>
-                <a href="Skills.html">Skills</a>
-                <a href="Activities.html">Activities</a>
-                
-            </nav>
+        <nav class="navigation">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Fayez_Ismail_Resume.pdf" target="_blank">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="Volunteer.html">Volunteering</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Activities.html">Activities</a>
+        </nav>
     </header>
 
-    <div class="main-content clearfix">
-        <div class="left-images">
-            <img src="Pictures/C.png" alt="Image 1">
-            <img src="Pictures/Python.jpeg" alt="Image 2">
-            <img src="Pictures/Java.png" alt="Image 3">
-            <img src="Pictures/Microphone.jpeg" alt="Image 4">
-            <img src="Pictures/Leadership01.jpeg" alt="Image 5">
-        </div>
-
-        <div class="right-images">
-            <img src="Pictures/C++.png" alt="Image 6">
-            <img src="Pictures/HTMLCSS.png" alt="Image 7">
-            <img src="Pictures/JavaScript.png" alt="Image 8">
-            <img src="Pictures/Public.png" alt="Image 9">
-            <img src="Pictures/Psolveing.jpeg" alt="Image 10">
-        </div>
-
+    <div class="main-content">
         <div class="container container1">
             <h1>Technical Skills</h1>
             <ul>
@@ -297,12 +299,12 @@ color: white;
 
         <div class="container container4">
             <h1>Additional Skills</h1>
-                <ul>
-                    <li><strong>Research Skills:</strong> Strong research capabilities</li>
-                    <li><strong>Problem-solving:</strong> Effective problem-solving abilities</li>
-                    <li><strong>Report Writing:</strong> Proficient in writing detailed and structured reports</li>
-                    <li><strong>Organization:</strong> Highly organized and detail-oriented</li>
-                </ul>
+            <ul>
+                <li><strong>Research Skills:</strong> Strong research capabilities</li>
+                <li><strong>Problem-solving:</strong> Effective problem-solving abilities</li>
+                <li><strong>Report Writing:</strong> Proficient in writing detailed and structured reports</li>
+                <li><strong>Organization:</strong> Highly organized and detail-oriented</li>
+            </ul>
         </div>
     </div>
 
@@ -318,5 +320,5 @@ color: white;
                 </div>
             </div>
         </footer>
-    </body>
+</body>
 </html>
